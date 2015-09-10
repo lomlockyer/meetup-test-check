@@ -33,6 +33,5 @@
 (defspec sorting
   100
   (prop/for-all [int-vec (gen/vector gen/int)]
-    (println int-vec)
     (= (sort int-vec) (m/custom-sort int-vec))))
 
